@@ -11,11 +11,11 @@ const Forcast = ({ data }: any) => {
   } = data;
   return (
     <>
-      <div className="flex flex-col w-56 h-32 border rounded-3xl p-4 text-sm justify-center items-center">
-        <p className="text-lg font-semibold">{date}</p>
-        <p>Max Temp: {maxtemp_c}°C</p>
-        <p>Condition: {text}</p>
-      </div>
+        <div className="flex flex-col border rounded-3xl p-4 text-sm justify-center items-center">
+          <p className="text-md  font-bold ">{date}</p>
+          <p className="mt-3">Max Temp: {maxtemp_c}°C</p>
+          <p>Condition: {text}</p>
+        </div>
     </>
   );
 };

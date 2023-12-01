@@ -35,7 +35,7 @@ function App() {
           <div className="bg-white bg-opacity-25 p-8 mt-12 rounded-lg z-10">
             <Search />
           </div>
-          <div className="flex gap-5 z-10">
+          <div className="flex  gap-5 z-10">
             <Block Icon={<PiThermometerColdThin />} data={temp} />
             <Block Icon={<WiHumidity />} data={humidity} />
             <Block data={temp_f} />
@@ -43,13 +43,14 @@ function App() {
 
           <div className="flex flex-col  z-10">
             <h1 className="flex justify-center font-bold text-3xl mb-5 text-white">Forecast</h1>
-            <div className="flex flex-row gap-5">
+            <div className="flex gap-1 md:gap-5">
               {forcastState &&
                 forcastState.forecastday.map((element, index) => (
                   <Forcast key={index} data={element} />
                 ))}
             </div>
           </div>
+          
         </div>
       </div>
     </>
