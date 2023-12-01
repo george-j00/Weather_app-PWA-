@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { AppDispatcher, RootState } from "../ReduxStore/store";
+import { useDispatch } from "react-redux";
 import { setCurrent, setForecast, setLocation } from "../ReduxStore/slice";
 
 const Search = () => {

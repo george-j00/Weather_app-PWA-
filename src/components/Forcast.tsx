@@ -1,5 +1,3 @@
-// import { useSelector } from "react-redux";
-// import { RootState } from "../ReduxStore/store";
 
 const Forcast = ({ data }: any) => {
   const {
